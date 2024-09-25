@@ -10,6 +10,7 @@ import { StreamCall, StreamTheme } from '@stream-io/video-react-sdk';
 import React, { useState } from 'react';
 
 const Meeting = ({ params: { id } }: { params: { id: string } }) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { user, isLoaded } = useUser();
   const [isSetupComplete, setIsSetupComplete] = useState(false);
   const { call, isCallLoading } = useGetCallById(id);
